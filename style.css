@@ -1,0 +1,144 @@
+body {
+  background-image: url("./photo_2024-05-31_23-14-15.jpg");
+  background-repeat: repeat-x;
+  background-size: 50vw 100vh;
+  height: 100vh;
+  transition: 0.4s;
+  margin: 0%;
+}
+
+header {
+  background-size: 70vw;
+  text-shadow: -1px 2px 15px black;
+  color: white;
+  display: grid;
+  place-items: center;
+  height: 16vh;
+  background-image: url("./1717087519014_format\,jpg&big.jpg");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 2vw;
+  font: bold;
+  transition: 0.4s;
+  filter: grayscale(50%);
+}
+
+header:hover {
+  filter: grayscale(0%);
+  height: 40vh;
+  transition: 0.4s;
+  z-index: 10px;
+}
+p {
+  text-shadow: -1px 2px 15px black;
+  text-align: center;
+  display: none;
+  transition: 0.4s;
+}
+header:hover p {
+  display: flex;
+  transition: 0.4s;
+}
+
+.i1 {
+  width: 150px;
+  height: 150px;
+  filter: grayscale(0%);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.div1 {
+  margin: 10px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.div11 {
+  display: none;
+}
+
+.table {
+  display: flex;
+  justify-items: startt;
+}
+.tDiv1 {
+  width: 50vw;
+}
+
+.div1:hover {
+  background-color: rgb(53, 53, 53);
+  height: 170px;
+  width: 40vw;
+  border-radius: 100px;
+  transition: 0.4s;
+  display: flex;
+}
+.div1:hover .div11 {
+  padding: 3px;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+.div1:hover .i1 {
+  width: 170px;
+  height: 170px;
+  filter: grayscale(0%);
+  cursor: pointer;
+  border-radius: 10% 50% 50% 10%;
+  transition: 0.3s;
+}
+
+.elementNotHov {
+  height: 140px;
+  margin: 5px;
+  filter: blur(2px) grayscale(70%);
+  transition: 0.4s;
+}
+
+.elementNotHov .i1 {
+  width: 140px;
+  height: 140px;
+}
+.bodyHov {
+  backdrop-filter: blur(2px) grayscale(70%);
+  height: 99.4vh;
+  margin: 0%;
+  transition: 0.4s;
+}
+header:hover .bodyHov {
+  backdrop-filter: blur(2px) grayscale(70%);
+  margin: 0%;
+}
+@media (max-width: 678px) {
+  .table {
+    display: block;
+  }
+  body {
+    margin: 0%;
+    background-image: url("./photo_2024-05-31_23-14-15-2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto 100vh;
+    height: auto;
+  }
+  .bodyHov {
+    height: auto;
+  }
+  .div1:hover {
+    width: 97.5vw;
+    font-size: 16px;
+  }
+  header {
+    background-size: 100vw;
+    font-size: 4vw;
+  }
+  header:hover {
+    height: 30vh;
+  }
+}
